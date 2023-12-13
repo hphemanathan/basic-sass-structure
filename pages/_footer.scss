@@ -1,0 +1,35 @@
+.footer {
+  margin-top: auto;
+  margin-inline: auto;
+  text-align: center;
+  margin-block-end: var(--37px);
+
+  &__icon {
+    margin-block-end: var(--27px);
+    display: flex;
+    justify-content: center;
+    gap: var(--12px);
+
+    & > * {
+      fill: var(--blue);
+      border: 0.918px solid var(--blue-light);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      padding: var(--8px);
+
+      &:hover,
+      &:active,
+      &:focus {
+        cursor: pointer;
+        fill: var(--white);
+        background-color: var(--blue);
+      }
+    }
+  }
+
+  &__text {
+    color: var(--gray);
+    font-size: 10px;
+  }
+}
